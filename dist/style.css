@@ -29,7 +29,9 @@ header {
 }
 
 .container {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
   height: auto;
   padding: 3em 2em;
   display: -webkit-box;
@@ -105,5 +107,25 @@ footer a {
   text-decoration: none;
   color: #bdbdbd;
   font-weight: 700;
+}
+
+@media (max-width: 62em) {
+  .container {
+    display: block;
+    width: 90%;
+  }
+  .container .box-2 h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 43em) {
+  .container {
+    display: block;
+    width: 90%;
+  }
+  .container .box-2 h1 {
+    font-size: 48px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
