@@ -10,11 +10,14 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
     font-family: 'Space Mono', monospace;
     margin: 0px;
     padding: 0px;
     color: #333333;
-    display: block;
+    height: 100vh;
 }
 
 header {
@@ -22,22 +25,25 @@ header {
     padding-left: 3em;
     width: 100%;
     height: auto;
-
     letter-spacing: -0.08em;
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    margin: 0 auto;
+    max-width: 70%;
     height: auto;
-    padding: 3em 2em ;
+    padding: 3em 2em;
     display: flex;
     .box-1 {
         flex: 1;
+        
         img {
-            width: 100%;
+            max-width: 70%;
             height: auto;
         }
     }
@@ -45,6 +51,7 @@ header {
     .box-2 {
         flex: 1;
         letter-spacing: -0.035em;
+        
         h1 {
             margin-top: 0;
             font-weight: 700;
@@ -74,9 +81,10 @@ header {
 }
 
 footer {
+    position: relative;
     width: 100%;
     height: auto;
-    margin-bottom: 24px;
+    padding-bottom: 24px;;
     text-align: center;
     color: #bdbdbd;
     font-family: 'Montserrat', sans-serif;
@@ -93,6 +101,12 @@ footer {
     .container {
         display: block;
         width: 90%;
+        .box-1{
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
         .box-2 {
             h1 {
                 font-size: 48px;
@@ -107,7 +121,7 @@ footer {
         width: 90%;
         .box-2 {
             h1 {
-                font-size: 48px;
+                font-size: 43px;
             }
         }
     }
